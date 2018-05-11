@@ -20,6 +20,8 @@ jobs:
     working_directory: /go/src/github.com/ottogiron/training-go
     steps:
       - checkout
+      - setup_remote_docker:
+            docker_layer_caching: true # default - false 
 
       # specify any bash command here prefixed with `run: `
       - run: make test
