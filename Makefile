@@ -24,3 +24,4 @@ tag_current_version:
 
 release: build tag_current_version push_latest push_release
 	echo "Releasing..."
+	
