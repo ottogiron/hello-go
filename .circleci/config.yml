@@ -46,7 +46,6 @@ jobs:
       - setup_remote_docker:
             docker_layer_caching: true # default - false 
       - run: |
-            set -eux
             docker login --username $DOCKER_USER --password $DOCKER_PASSWORD
             make release
 
